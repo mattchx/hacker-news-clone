@@ -29,8 +29,8 @@ function favoritesReducer(state = initialState, action) {
        return state;
   } 
 }
- 
-//23456const action = { type: "ADD_FAVORITE", payload: { favorite: { title: "story1", id: 1 } } };
+
+// const action = { type: "ADD_FAVORITE", payload: { favorite: { title: "story1", id: 1 } } };
 
 const store = createStore(favoritesReducer);
 // store.dispatch(action);

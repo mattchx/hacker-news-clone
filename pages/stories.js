@@ -14,11 +14,11 @@ export default async function Stories(path) {
   </div>`; 
   
   document.querySelectorAll('.favorite').forEach(favoriteButton => {
-    favoriteButton.addEventListener('click', async function() {
-      const story = JSON.parse(this.dataset.story);  
-      const isFavorited = checkFavorite(favorites, story);
-      store.dispatch({ type: isFavorited ? "REMOVE_FAVORITE" : "ADD_FAVORITE", payload: { favorite: story } })  
-      await Stories(path);
+     favoriteButton.addEventListener('click', async function() {
+       const story = JSON.parse(this.dataset.story);  
+       const isFavorited = checkFavorite(favorites, story);
+       store.dispatch({ type: isFavorited ? "REMOVE_FAVORITE" : "ADD_FAVORITE", payload: { favorite: story } })  
+       await Stories(path);
      }); 
   });
 }

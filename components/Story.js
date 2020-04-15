@@ -17,7 +17,7 @@ export default function Story(story) {
           |
           <span class="favorite" data-story='${JSON.stringify(story)}'>
             <img class="heart" src="https://icon.now.sh/heart/ccc">
-            ${story.isFavorite ? "Remove from Favorites" : "Add To Favorites"}
+            ${story.isFavorite ? "Remove From Favorites" : "Add To Favorites"}
           </span>
         </div>
       </div>
